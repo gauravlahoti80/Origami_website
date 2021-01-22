@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Origami Designs</title>
+        <!--Css files link-->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="lightslider.css"/>
+
+    <!--Js Files link-->
+    <script  src="JS/JQuery3.3.1.js"></script>
+    <script src="JS/lightslider.js"></script>
+
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="fav-icon.png"/>
+
+    <!--using FontAwesome--------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+    <!--Navigation bar------>
+    <nav>
+        <div class="header">
+        <h1>Origami Designs</h1>
+        </div>
+        <!--menu------->
+        <ul class="menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Follow Us">Follow Us
+            </a></li>
+        </ul>
+        <!--Search-->
+        <div class="search">
+            <input id="search" type="text" placeholder="Search" autocomplete="off">
+            <!--Search-icon-->
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+
+    <section id="main">
+        <!--Showcase-->
+        <h1 class="showcase-heading">Showcase</h1>
+        <ul id="autoWidth" class="cs-hidden">
+    
+            <!--box-1--------------------------->
+        <li class="item-a">
+            <!--showcase-box------------------->
+           <div class="showcase-box">
+            <a href="camel.html"><img src="images/camel.png"/></a>
+           </div>
+               </li>
+            <!--box-2--------------------------->
+            <li class="item-b">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                <a href="c.html"><img src="images/chameleon.png"/></a>
+               </div>
+                   </li>
+                <!--box-3--------------------------->
+            <li class="item-c">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                <a href="cicada.html"><img src="images/cicada.png"/></a>
+               </div>
+                   </li>
+                <!--box-4--------------------------->
+            <li class="item-d">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                <a href="panda.html"><img src="images/panda.png"/></a>
+               </div>
+                   </li>
+                   <!--box-5--------------------------->
+            <li class="item-e">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <a href="peigon.html"><img src="images/pigeon.png"/></a>
+               </div>
+                   </li>
+          </ul>
+</section>
+
+        <!--for you-->
+        <section id="latest">
+            <h1 class="latest-heading">For You (Coming Soon)</h1>
+            <!--slider------------------->
+            <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            <li class="item-a">
+                <div class="latest-box">
+                    <!--img-------->
+                    <div class="latest-b-img">
+                        <img src="images/teddy.png">
+                    </div>
+                    <!--text---------->
+                    <div class="latest-b-text">
+                        <strong>Teddy</strong>
+                        <p>Origami</p>
+                    </div>
+                </div>
+            </li>
+    <!--slide-box-2------------------>
+    <li class="item-b">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/butterfly.jfif">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Butterfly</strong>
+                <p>Origami</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-3------------------>
+    <li class="item-c">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/cat.jpg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Cat</strong>
+                <p>Origami</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-4------------------>
+    <li class="item-d">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/peackock.jfif">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Peacock</strong>
+                <p>Origami</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-5------------------>
+    <li class="item-e">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/house.jfif">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Horse</strong>
+                <p>Origami</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-6------------------>
+    <li class="item-f">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/mouse.jfif">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Mouse</strong>
+                <p>Origami</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-7------------------>
+    <li class="item-g">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/elephant.jfif">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Elephant</strong>
+                <p>Origami</p>
+            </div>
+        </div>
+    </li>
+          </ul>
+    </section>
+<!--Slider-script--------->
+<script>
+    $(document).ready(function() {
+    $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+</script>
+</body>
+</html>
